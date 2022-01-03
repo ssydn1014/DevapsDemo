@@ -1,0 +1,31 @@
+Documentation to downlaod Tomcat                                                                                                                                                                                                        1.wget https://mirrors.gigenet.com/apache/tomcat/tomcat-9/v9.0.39/bin/apache-tomcat-9.0.39.tar.gz                                               
+ 2.untar file---- tar -xvzf apache-tomcat-9.0.39.                                                                                               
+ 3.go to /tomcat/conf and edit the file tomcat-users.xml
+ 3.1--cd apache-tomcat-9.0.39
+ 3.2--cd conf
+ 3.3--vi tomcat-users.xml
+
+ 4.delete the content of the whole file 
+ JYI for VI editor delete whole file
+ {Follow the below steps to empty a file:
+ Go to command mode in the editor by pressing ESC key on the keyboard.
+ Press gg. It will take to the first line of the file.
+ Then press dG. This will delete from the first line to the last line.}
+
+  and add below lines
+ <?xml version='1.0' encoding='utf-8'?>
+    <tomcat-users>
+    <role rolename="manager-gui"/>
+    <role rolename="manager-script"/>
+    <role rolename="manager-jmx"/>
+    <role rolename="manager-jmx"/>
+    <role rolename="admin-gui"/>
+    <role rolename="admin-script"/>
+    <user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
+</tomcat-users>
+
+
+now start and stop the tomcat using
+./startup.sh start
+./shutdown.sh  
+Go to apache-tomcat-9.0.39/webapps/manager/META-INF/vi context.xml and commment two lines.                                               * open port number 8080 in security groups
