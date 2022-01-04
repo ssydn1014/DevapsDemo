@@ -36,6 +36,8 @@ git config --global user.name "ssydn1014"----user name configuration
   105  ctrl + l -----clear the screen.
   106  . or * can be used
 
+==============================================
+cat .git/config
 
   
 
