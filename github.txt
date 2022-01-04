@@ -1,0 +1,41 @@
+git config --global user.name "ssydn1014"----user name configuration
+   71  git config --global user.email "ssydn1014@gmail.com" -----Email configuration
+   72  git clone https://github.com/ssydn1014/PythonSamples.git-----Clone with repositary
+   73  ls -----list files
+   74  ls
+   75  ls -lrta -----list files with date and time creation and with message
+   76  ls -lrta PythonSamples/
+   77  touch swathi.txt ---- file creation
+   78  cd PythonSamples ---- change directory
+   79  pwd ---- Present working Directory
+   80  ls -lrta
+   81  touch sample.txt
+   82  git status ---- git status
+   83  git status
+   84  git add * ------ add files
+   85  git status
+   86  git commit -m "first example" ----- commit with message
+   87  git commit -m "first example"
+   88  git commit -m "first example" *
+   89  git status
+   90  git push -u origin master---- push files to orgin
+   91  git status
+   92  git status
+   93  git pull-----pull the files from remote repositary
+   94  history--- get the history of commands used
+   95  pwd
+   96  ls lrta
+   97  ls -lrta
+   98  git add *
+   99  git status
+  100  git commit -m "second example" *
+  101  git status
+  102  git push -u origin master
+  103  history
+  104  mkdir PythonSamples ----- make directory
+  105  ctrl + l -----clear the screen.
+  106  . or * can be used
+
+
+  
+
